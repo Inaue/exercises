@@ -1,4 +1,9 @@
 <!DOCTYPE html>
-<?php
-//code
-?>
+
+<html>
+	<body>
+		<header>
+			<?php include 'index.inc'; ?>
+		</header>
+	</body>
+</html>

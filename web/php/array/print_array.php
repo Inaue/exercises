@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <body>
+    	<?php include 'index.php'; ?>
+
         <form action="/print_array.php" method="GET">
             <fieldset>
                 <legend>Enderecos para Cobranca</legend>
