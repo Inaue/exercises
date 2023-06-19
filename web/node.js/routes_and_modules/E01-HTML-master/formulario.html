@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro</title>
+    </head>
+    <body>
+	<header>
+		<ul>
+			<li><a href="/">Pagina Inicial</a></li>
+			<li><a href="/news">Exercicio T1</a></li>
+			<li><a href="/exam">Exercicio T2</a></li>
+			<li><a href="/answer">Exercicio T3</a></li>
+			<li><a href="/form">Exercicio T4</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<h1>Cadastro</h1>
+		<form action="formulario.html" method="POST">
+		    <fieldset>
+			<legend>Dados Pessoais</legend>
+
+			<label>Codigo:</label>
+			<input type="number" value="001" disabled/><br/>
+			<label>Nome:</label>
+			<input type="text"/><br/>
+			<label>Senha:</label>
+			<input type="password"/><br/>
+			<label>Sexo:</label>
+			<input type="radio" name="gender"/>Masculino
+			<input type="radio" name="gender"/>Feminino<br/>
+			<label>Idade:</label>
+			<input type="number"/><br/>
+			<label>Cartao de Credito:</label>
+			<select>
+			    <option>Mastercard</option>
+			    <option>Visa</option>
+			    <option>American Express</option>
+			</select><br/>
+		    </fieldset>
+		    <fieldset>
+			<legend>Dados Profissionais</legend>
+
+			<label>Cargo:</label>
+			<select>
+			    <option>Analista Junior</option>
+			    <option>Analista Pleno</option>
+			    <option>Analista Senior</option>
+			</select><br/>
+			<label>Dados Pessoais:</label><br/>
+			<input type="checkbox"/>Fumante<br/>
+			<input type="checkbox"/>Pratica exercicios fisicos<br/>
+			<input type="checkbox"/>Consome bebida alcoolica<br/>
+			<label>Experiencias Profissionais:</label><br/>
+			<textarea placeholder="Data Inicio/Data Fim/Empresa/Cargo"></textarea>
+		    </fieldset>
+		    <input type="reset" value="Limpar"/>
+		    <input type="submit" value="Enviar"/>
+		</form>
+	</main>
+
+	<footer>
+		<img height="50" src="https://www.institutoconfucio.ufmg.br/images/Logo_Coltec.png">
+
+		<p>@2023 = by("Inaue");</p>
+
+		<!--Social Media-->
+		<ul>
+			<li><a href="https://github.com/Inaue">GitHub</a></li>
+			<li><a href="https://www.instagram.com/inaueee/?igshid=YmMyMTA2M2Y%3D">Instagram</a></li>
+		</ul>
+	</footer>
+    </body>
+</html>
