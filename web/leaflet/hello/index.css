@@ -1,0 +1,24 @@
+#map
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: 10px solid gray;
+}
+
+#cont_div
+{
+    width: 50%;
+    height: 400px;
+    margin-left: 25%;
+}
+
+#btn_save
+{
+    margin: 25px;
+}
+
+body
+{
+    text-align: center;
+}
