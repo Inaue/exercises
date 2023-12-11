@@ -18,12 +18,6 @@ let g_terrain = L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',
 /* CHOOSING LAYER */
 g_terrain.addTo(map);
 
-/* CREATING POLYLINE */
-
-let line = new L.Polyline([[center.x, center.y], [center.x + .5, center.y + .5]])
-
-//line.addTo(map)
-
 let user_figures = localStorage.getItem('figures')
 
 if(user_figures == null)
