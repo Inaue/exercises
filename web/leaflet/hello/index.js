@@ -1,7 +1,9 @@
-let center  = { x: -20.0579752, y: -44.033977 }
+let center = localStorage.getItem('center')
+
+center = center == null ? [-20.0579752, -44.033977] : JSON.parse(center)
 
 /* MAP */
-var map = L.map('map').setView([center.x, center.y], 15, { drawControl: true });
+let map = L.map('map').setView(center, 15)
 
 /* LAYERS */
 let default_layer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -20,7 +22,7 @@ g_terrain.addTo(map);
 
 let line = new L.Polyline([[center.x, center.y], [center.x + .5, center.y + .5]])
 
-line.addTo(map)
+//line.addTo(map)
 
 let user_figures = localStorage.getItem('figures')
 
@@ -48,4 +50,5 @@ map.on('draw:created', e => user_figures.addLayer(e.layer))
 document.getElementById('btn_save').addEventListener('click', e =>
     {
         localStorage.setItem('figures', JSON.stringify(user_figures.toGeoJSON()))
+        localStorage.setItem('center', JSON.stringify(map.getCenter()))
     })
